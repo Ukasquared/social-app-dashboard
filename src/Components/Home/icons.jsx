@@ -11,7 +11,7 @@ export const navigationItems = [
     {pathname: "/create", icon: <FontAwesomeIcon icon={faPlus} />, label: "create" }
 ]
 
- export const mobileItems = [{pathname: "/Home", icon: <FontAwesomeIcon icon={faHouse} />, label: "Home" },
+ export const mobileItems = [{pathname: "/home", icon: <FontAwesomeIcon icon={faHouse} />, label: "Home" },
     {pathname: "/counsellor", icon: <FontAwesomeIcon icon={faPersonShelter} />, label: ""},
     {pathname: "/message", icon: <FontAwesomeIcon icon={faMessage} />, label: "" },
     {pathname: "/profile", icon: <FontAwesomeIcon icon={faUser} />, label: "" },
