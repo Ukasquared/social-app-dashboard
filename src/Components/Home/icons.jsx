@@ -1,9 +1,9 @@
 import {faHouse, faMagnifyingGlass, faPersonShelter, faMessage, faUser, faBell, faPlus} from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const navigationItems = [
     {pathname: "/search", icon: <FontAwesomeIcon icon={faMagnifyingGlass} />, label: "search" },
-    {pathname: "/Home", icon: <FontAwesomeIcon icon={faHouse} />, label: "Home" },
+    {pathname: "/home", icon: <FontAwesomeIcon icon={faHouse} />, label: "Home" },
     {pathname: "/counsellor", icon: <FontAwesomeIcon icon={faPersonShelter} />, label: "counsellor"},
     {pathname: "/message", icon: <FontAwesomeIcon icon={faMessage} />, label: "message" },
     {pathname: "/profile", icon: <FontAwesomeIcon icon={faUser} />, label: "profile" },

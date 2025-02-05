@@ -1,31 +1,31 @@
 import { faShare, faBookmark, faComment, faHeart} from "@fortawesome/free-solid-svg-icons";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Social () {
     return (
-        <div class="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4">
             {/* <!-- Item 1 --> */}
-            <div class="flex items-center space-x-2">
-                <span><FontAwesomeIcon icon={faShare} /></span> 
-                <span>40k</span>
+            <div className="flex items-center space-x-2">
+                <span className="rounded-full p-3 bg-gray-500"><FontAwesomeIcon icon={faShare} className="text-white" /></span> 
+                <span className="text-white">40k</span>
             </div>
 
             {/* <!-- Item 2 --> */}
-            <div class="flex items-center space-x-2">
-                <span><FontAwesomeIcon icon={faBookmark} /></span>
-                <span>40k</span>
+            <div className="flex items-center space-x-2">
+                <span className="rounded-full p-3 bg-gray-500"><FontAwesomeIcon icon={faBookmark} className="text-white" /></span>
+                <span className="text-white">40k</span>
             </div>
 
             {/* <!-- Item 3 --> */}
-            <div class="flex items-center space-x-2">
-                <span><FontAwesomeIcon icon={faComment} /></span>
-                <span>40k</span>
+            <div className="flex items-center space-x-2">
+                <span className="rounded-full p-3 bg-gray-500"><FontAwesomeIcon icon={faComment} className="text-white"/></span>
+                <span className="text-white">40k</span>
             </div>
 
             {/* <!-- Item 4 --> */}
-            <div class="flex items-center space-x-2">
-                <span><FontAwesomeIcon icon={faHeart} /></span>
-                <span>40k</span>
+            <div className="flex items-center space-x-2">
+                <span className="rounded-full p-3 bg-gray-500"><FontAwesomeIcon icon={faHeart} className="text-white"/></span>
+                <span className="text-white">40k</span>
             </div>
         </div>
     )

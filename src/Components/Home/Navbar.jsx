@@ -6,15 +6,15 @@ function Navbar () {
     const location = useLocation()
 
     return (
-        <nav className="navcbg-blue-600 text-white p-4">
+        <nav className="navcbg-blue-600 text-white p-4 shadow-sm shadow-white">
         {/* Desktop navigation */}
-        <div className="desktop-nav container mx-auto flex justify-between items-center">
-            <ul className="hidden md:flex space-x-6">
+        <div className="desktop-nav container mx-auto">
+            <ul className="hidden md:flex flex-col space-x-6">
                 {navigationItems.map((items) => (
-                    <li key={items.pathname}>
+                    <li className="mb-5" key={items.pathname}>
                         <Link to={items.pathname} className={` ${location.pathname === items.pathname ? "" : ""}`}>
-                            <span>{items.icon}</span>
-                            <span>{items.label}</span>
+                            <span className="inline-block mr-5">{items.icon}</span>
+                            <span className="inline-block" >{items.label}</span>
                         </Link>
                     </li>
                 ))}
