@@ -6,7 +6,7 @@ import HomeOutlet from "./view/home"
 
 function App() {
   return (
-    <Router>
+    <Router basename="/social-app-dashboard">
       <Routes>
         <Route path="/" element={<Navigate to="/home" />}/>
         <Route path="/home" element={<Home />}> 
